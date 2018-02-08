@@ -1,0 +1,11 @@
+adminToken=
+
+filesystemBase=
+store.directory=
+
+log4j.level=INFO
+log4j.ConversionPattern=%d{HH:mm:ss,SSSS} [%t] %-5p %c{1} - %m%n
+
+database.dialect=org.hibernate.dialect.MySQLDialect
+database.connection.properties=<property name="connection.datasource">java:/comp/env/jdbc/rodl</property>
+

@@ -1,0 +1,1292 @@
+@prefix : <#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix cdesc: <https://w3id.org/contentdesc#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#broader
+skos:broader rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+skos:inScheme rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#related
+skos:related rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+skos:topConceptOf rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  https://w3id.org/contentdesc#ResearchArea
+cdesc:ResearchArea rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://eurovoc.europa.eu/1147
+<http://eurovoc.europa.eu/1147> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1151> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "geochemia"@pl ,
+                                               "geochemistry"@en ,
+                                               "geochimica"@it ,
+                                               "geoquímica"@es ;
+                                skos:related <http://eurovoc.europa.eu/5966> .
+
+
+###  http://eurovoc.europa.eu/1148
+<http://eurovoc.europa.eu/1148> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3952> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "geografia"@it ,
+                                               "geografia"@pl ,
+                                               "geografía"@es ,
+                                               "geography"@en .
+
+
+###  http://eurovoc.europa.eu/1149
+<http://eurovoc.europa.eu/1149> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1148> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "economic geography"@en ,
+                                               "geografia economica"@it ,
+                                               "geografia gospodarcza"@pl ,
+                                               "geografía económica"@es .
+
+
+###  http://eurovoc.europa.eu/1150
+<http://eurovoc.europa.eu/1150> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1148> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "geografia politica"@it ,
+                                               "geografia polityczna"@pl ,
+                                               "geografía política"@es ,
+                                               "political geography"@en ;
+                                skos:related <http://eurovoc.europa.eu/3947> ,
+                                             <http://eurovoc.europa.eu/435265> .
+
+
+###  http://eurovoc.europa.eu/1151
+<http://eurovoc.europa.eu/1151> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3952> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "geologia"@it ,
+                                               "geologia"@pl ,
+                                               "geology"@en ,
+                                               "geología"@es .
+
+
+###  http://eurovoc.europa.eu/1152
+<http://eurovoc.europa.eu/1152> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1151> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "geofisica"@it ,
+                                               "geofizyka"@pl ,
+                                               "geofísica"@es ,
+                                               "geophysics"@en ,
+                                               "γεωφυσική"@el ;
+                                skos:related <http://eurovoc.europa.eu/3946> .
+
+
+###  http://eurovoc.europa.eu/1246
+<http://eurovoc.europa.eu/1246> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4921> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "histologia"@pl ,
+                                               "histology"@en ,
+                                               "histología"@es ,
+                                               "istologia"@it .
+
+
+###  http://eurovoc.europa.eu/1276
+<http://eurovoc.europa.eu/1276> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1151> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "hidrogeología"@es ,
+                                               "hydrogeologia"@pl ,
+                                               "hydrogeology"@en ,
+                                               "idrogeologia"@it ;
+                                skos:related <http://eurovoc.europa.eu/609> .
+
+
+###  http://eurovoc.europa.eu/1278
+<http://eurovoc.europa.eu/1278> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3952> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "hidrología"@es ,
+                                               "hydrologia"@pl ,
+                                               "hydrology"@en ,
+                                               "idrologia"@it ;
+                                skos:related <http://eurovoc.europa.eu/1534> ,
+                                             <http://eurovoc.europa.eu/3535> ,
+                                             <http://eurovoc.europa.eu/597> ,
+                                             <http://eurovoc.europa.eu/602> .
+
+
+###  http://eurovoc.europa.eu/1835
+<http://eurovoc.europa.eu/1835> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3949> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "matematica"@it ,
+                                               "matematyka"@pl ,
+                                               "matemáticas"@es ,
+                                               "mathematics"@en ;
+                                skos:related <http://eurovoc.europa.eu/4256> ,
+                                             <http://eurovoc.europa.eu/5473> ,
+                                             <http://eurovoc.europa.eu/6267> .
+
+
+###  http://eurovoc.europa.eu/1892
+<http://eurovoc.europa.eu/1892> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3952> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "meteorologia"@it ,
+                                               "meteorologia"@pl ,
+                                               "meteorology"@en ,
+                                               "meteorología"@es ,
+                                               "μετεωρολογία"@el ;
+                                skos:related <http://eurovoc.europa.eu/c_ea3f5ed2> ,
+                                             <http://eurovoc.europa.eu/2142> .
+
+
+###  http://eurovoc.europa.eu/1896
+<http://eurovoc.europa.eu/1896> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3949> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "metrologia"@it ,
+                                               "metrologia"@pl ,
+                                               "metrology"@en ,
+                                               "metrología"@es ;
+                                skos:related <http://eurovoc.europa.eu/2159> .
+
+
+###  http://eurovoc.europa.eu/1936
+<http://eurovoc.europa.eu/1936> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1151> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "mineralogia"@it ,
+                                               "mineralogia"@pl ,
+                                               "mineralogy"@en ,
+                                               "mineralogía"@es ;
+                                skos:related <http://eurovoc.europa.eu/2767> ,
+                                             <http://eurovoc.europa.eu/3546> ,
+                                             <http://eurovoc.europa.eu/51> .
+
+
+###  http://eurovoc.europa.eu/2114
+<http://eurovoc.europa.eu/2114> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3952> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "oceanografia"@it ,
+                                               "oceanografia"@pl ,
+                                               "oceanografía"@es ,
+                                               "oceanography"@en ;
+                                skos:related <http://eurovoc.europa.eu/1050> ,
+                                             <http://eurovoc.europa.eu/2107> ,
+                                             <http://eurovoc.europa.eu/3531> ,
+                                             <http://eurovoc.europa.eu/743> ,
+                                             <http://eurovoc.europa.eu/752> .
+
+
+###  http://eurovoc.europa.eu/2232
+<http://eurovoc.europa.eu/2232> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3941> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "parasitology"@en ,
+                                               "parasitología"@es ,
+                                               "parassitologia"@it ,
+                                               "parazytologia"@pl ;
+                                skos:related <http://eurovoc.europa.eu/1763> ,
+                                             <http://eurovoc.europa.eu/4490> .
+
+
+###  http://eurovoc.europa.eu/2367
+<http://eurovoc.europa.eu/2367> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3941> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "farmacologia"@it ,
+                                               "farmacología"@es ,
+                                               "farmakologia"@pl ,
+                                               "pharmacology"@en ;
+                                skos:related <http://eurovoc.europa.eu/1594> ,
+                                             <http://eurovoc.europa.eu/2773> ,
+                                             <http://eurovoc.europa.eu/7355> .
+
+
+###  http://eurovoc.europa.eu/2373
+<http://eurovoc.europa.eu/2373> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/5966> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "fotochemia"@pl ,
+                                               "fotochimica"@it ,
+                                               "fotoquímica"@es ,
+                                               "photochemistry"@en ;
+                                skos:related <http://eurovoc.europa.eu/1416> .
+
+
+###  http://eurovoc.europa.eu/2376
+<http://eurovoc.europa.eu/2376> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3946> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "fisica nucleare"@it ,
+                                               "fizyka jądrowa"@pl ,
+                                               "física nuclear"@es ,
+                                               "nuclear physics"@en ;
+                                skos:related <http://eurovoc.europa.eu/1840> ,
+                                             <http://eurovoc.europa.eu/3789> ,
+                                             <http://eurovoc.europa.eu/4422> ,
+                                             <http://eurovoc.europa.eu/753> .
+
+
+###  http://eurovoc.europa.eu/3282
+<http://eurovoc.europa.eu/3282> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4921> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "neurobiologia"@it ,
+                                               "neurobiologia"@pl ,
+                                               "neurobiology"@en ,
+                                               "neurobiología"@es ;
+                                skos:related <http://eurovoc.europa.eu/3285> ,
+                                             <http://eurovoc.europa.eu/5719> .
+
+
+###  http://eurovoc.europa.eu/3291
+<http://eurovoc.europa.eu/3291> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3946> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "acoustics"@en ,
+                                               "acustica"@it ,
+                                               "acústica"@es ,
+                                               "akustyka"@pl ;
+                                skos:related <http://eurovoc.europa.eu/5048> .
+
+
+###  http://eurovoc.europa.eu/3292
+<http://eurovoc.europa.eu/3292> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3946> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "optics"@en ,
+                                               "optyka"@pl ,
+                                               "ottica"@it ,
+                                               "óptica"@es ;
+                                skos:related <http://eurovoc.europa.eu/1413> .
+
+
+###  http://eurovoc.europa.eu/3293
+<http://eurovoc.europa.eu/3293> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3949> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "cibernetica"@it ,
+                                               "cibernética"@es ,
+                                               "cybernetics"@en ,
+                                               "cybernetyka"@pl ;
+                                skos:related <http://eurovoc.europa.eu/3026> ,
+                                             <http://eurovoc.europa.eu/3030> ,
+                                             <http://eurovoc.europa.eu/3740> ,
+                                             <http://eurovoc.europa.eu/6267> .
+
+
+###  http://eurovoc.europa.eu/3294
+<http://eurovoc.europa.eu/3294> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1151> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "petrologia"@it ,
+                                               "petrologia"@pl ,
+                                               "petrology"@en ,
+                                               "petrología"@es .
+
+
+###  http://eurovoc.europa.eu/3790
+<http://eurovoc.europa.eu/3790> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/6382> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "astronomia"@it ,
+                                               "astronomia"@pl ,
+                                               "astronomy"@en ,
+                                               "astronomía"@es .
+
+
+###  http://eurovoc.europa.eu/3925
+<http://eurovoc.europa.eu/3925> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3949> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "ciencia de la información"@es ,
+                                               "informacja naukowa"@pl ,
+                                               "information science"@en ,
+                                               "scienze dell'informazione"@it ,
+                                               "επιστήμη των πληροφοριών"@el ;
+                                skos:related <http://eurovoc.europa.eu/1422> ,
+                                             <http://eurovoc.europa.eu/2472> ,
+                                             <http://eurovoc.europa.eu/3026> ,
+                                             <http://eurovoc.europa.eu/3585> ,
+                                             <http://eurovoc.europa.eu/4366> ,
+                                             <http://eurovoc.europa.eu/4486> ,
+                                             <http://eurovoc.europa.eu/494> .
+
+
+###  http://eurovoc.europa.eu/3931
+<http://eurovoc.europa.eu/3931> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3952> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "ciencia del suelo"@es ,
+                                               "gleboznawstwo"@pl ,
+                                               "scienza del terreno"@it ,
+                                               "soil science"@en ,
+                                               "εδαφολογία"@el ;
+                                skos:related <http://eurovoc.europa.eu/1483> ,
+                                             <http://eurovoc.europa.eu/2534> ,
+                                             <http://eurovoc.europa.eu/3158> ,
+                                             <http://eurovoc.europa.eu/3536> .
+
+
+###  http://eurovoc.europa.eu/3941
+<http://eurovoc.europa.eu/3941> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "ciencias biológicas"@es ,
+                                               "life sciences"@en ,
+                                               "nauki o życiu"@pl ,
+                                               "scienze biologiche"@it ;
+                                skos:related <http://eurovoc.europa.eu/5881> ;
+                                skos:topConceptOf <http://eurovoc.europa.eu/100224> .
+
+
+###  http://eurovoc.europa.eu/3946
+<http://eurovoc.europa.eu/3946> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "ciencias físicas"@es ,
+                                               "nauki fizyczne"@pl ,
+                                               "physical sciences"@en ,
+                                               "scienze fisiche"@it ;
+                                skos:related <http://eurovoc.europa.eu/1152> ;
+                                skos:topConceptOf <http://eurovoc.europa.eu/100224> .
+
+
+###  http://eurovoc.europa.eu/3949
+<http://eurovoc.europa.eu/3949> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "applied sciences"@en ,
+                                               "ciencias aplicadas"@es ,
+                                               "nauki stosowane"@pl ,
+                                               "scienze applicate"@it ;
+                                skos:related <http://eurovoc.europa.eu/2916> ;
+                                skos:topConceptOf <http://eurovoc.europa.eu/100224> .
+
+
+###  http://eurovoc.europa.eu/3952
+<http://eurovoc.europa.eu/3952> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "ciencias de la tierra"@es ,
+                                               "earth sciences"@en ,
+                                               "geoscienze"@it ,
+                                               "nauki o ziemi"@pl ;
+                                skos:related <http://eurovoc.europa.eu/833> ;
+                                skos:topConceptOf <http://eurovoc.europa.eu/100224> .
+
+
+###  http://eurovoc.europa.eu/4107
+<http://eurovoc.europa.eu/4107> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3946> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "aerodinamica"@it ,
+                                               "aerodinámica"@es ,
+                                               "aerodynamics"@en ,
+                                               "aerodynamika"@pl ;
+                                skos:related <http://eurovoc.europa.eu/1358> .
+
+
+###  http://eurovoc.europa.eu/4108
+<http://eurovoc.europa.eu/4108> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3946> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "termodinamica"@it ,
+                                               "termodinámica"@es ,
+                                               "termodynamika"@pl ,
+                                               "thermodynamics"@en ;
+                                skos:related <http://eurovoc.europa.eu/757> .
+
+
+###  http://eurovoc.europa.eu/4109
+<http://eurovoc.europa.eu/4109> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3946> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "fisica del plasma"@it ,
+                                               "fizyka plazmy"@pl ,
+                                               "física del plasma"@es ,
+                                               "plasma physics"@en ;
+                                skos:related <http://eurovoc.europa.eu/1123> .
+
+
+###  http://eurovoc.europa.eu/4110
+<http://eurovoc.europa.eu/4110> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3946> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "fisica laser"@it ,
+                                               "fizyka laserowa"@pl ,
+                                               "física de los rayos láser"@es ,
+                                               "laser physics"@en ;
+                                skos:related <http://eurovoc.europa.eu/3874> .
+
+
+###  http://eurovoc.europa.eu/4176
+<http://eurovoc.europa.eu/4176> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1151> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "seismology"@en ,
+                                               "sejsmologia"@pl ,
+                                               "sismologia"@it ,
+                                               "sismología"@es ;
+                                skos:related <http://eurovoc.europa.eu/3141> ,
+                                             <http://eurovoc.europa.eu/5890> .
+
+
+###  http://eurovoc.europa.eu/442765
+<http://eurovoc.europa.eu/442765> rdf:type owl:NamedIndividual ,
+                                           skos:Concept ,
+                                           cdesc:ResearchArea ;
+                                  skos:broader <http://eurovoc.europa.eu/4810> ;
+                                  skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                                <http://eurovoc.europa.eu/100224> ;
+                                  skos:prefLabel "animal taxonomy"@en ,
+                                                 "classificazione degli animali"@it ,
+                                                 "sistemática zoológica"@es ,
+                                                 "taksonomia zwierząt"@pl ;
+                                  skos:related <http://eurovoc.europa.eu/442791> .
+
+
+###  http://eurovoc.europa.eu/442791
+<http://eurovoc.europa.eu/442791> rdf:type owl:NamedIndividual ,
+                                           skos:Concept ,
+                                           cdesc:ResearchArea ;
+                                  skos:broader <http://eurovoc.europa.eu/5028> ;
+                                  skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                                <http://eurovoc.europa.eu/100224> ;
+                                  skos:prefLabel "classificazione delle piante"@it ,
+                                                 "plant taxonomy"@en ,
+                                                 "sistemática botánica"@es ,
+                                                 "taksonomia roślin"@pl ;
+                                  skos:related <http://eurovoc.europa.eu/442765> .
+
+
+###  http://eurovoc.europa.eu/4770
+<http://eurovoc.europa.eu/4770> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1151> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "volcanology"@en ,
+                                               "vulcanologia"@it ,
+                                               "vulcanología"@es ,
+                                               "wulkanologia"@pl ;
+                                skos:related <http://eurovoc.europa.eu/856> .
+
+
+###  http://eurovoc.europa.eu/4810
+<http://eurovoc.europa.eu/4810> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4921> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "zoologia"@it ,
+                                               "zoologia"@pl ,
+                                               "zoology"@en ,
+                                               "zoología"@es ;
+                                skos:related <http://eurovoc.europa.eu/6322> ,
+                                             <http://eurovoc.europa.eu/865> ,
+                                             <http://eurovoc.europa.eu/972> .
+
+
+###  http://eurovoc.europa.eu/4889
+<http://eurovoc.europa.eu/4889> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/5966> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "biochemia"@pl ,
+                                               "biochemistry"@en ,
+                                               "biochimica"@it ,
+                                               "bioquímica"@es ;
+                                skos:related <http://eurovoc.europa.eu/1362> ,
+                                             <http://eurovoc.europa.eu/4890> ,
+                                             <http://eurovoc.europa.eu/4891> ,
+                                             <http://eurovoc.europa.eu/4921> .
+
+
+###  http://eurovoc.europa.eu/4921
+<http://eurovoc.europa.eu/4921> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3941> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "biologia"@it ,
+                                               "biologia"@pl ,
+                                               "biology"@en ,
+                                               "biología"@es ;
+                                skos:related <http://eurovoc.europa.eu/2080> ,
+                                             <http://eurovoc.europa.eu/3797> ,
+                                             <http://eurovoc.europa.eu/4889> ,
+                                             <http://eurovoc.europa.eu/5169> ,
+                                             <http://eurovoc.europa.eu/568> ,
+                                             <http://eurovoc.europa.eu/6385> ,
+                                             <http://eurovoc.europa.eu/7410> .
+
+
+###  http://eurovoc.europa.eu/5028
+<http://eurovoc.europa.eu/5028> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4921> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "botanica"@it ,
+                                               "botanika"@pl ,
+                                               "botany"@en ,
+                                               "botánica"@es ;
+                                skos:related <http://eurovoc.europa.eu/1030> .
+
+
+###  http://eurovoc.europa.eu/5269
+<http://eurovoc.europa.eu/5269> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1148> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "cartografia"@it ,
+                                               "cartografía"@es ,
+                                               "cartography"@en ,
+                                               "kartografia"@pl ;
+                                skos:related <http://eurovoc.europa.eu/3930> ,
+                                             <http://eurovoc.europa.eu/4426> ,
+                                             <http://eurovoc.europa.eu/7379> .
+
+
+###  http://eurovoc.europa.eu/5287
+<http://eurovoc.europa.eu/5287> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3946> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "ionising radiation"@en ,
+                                               "promieniowanie jonizujące"@pl ,
+                                               "radiación ionizante"@es ,
+                                               "radiazione ionizzante"@it ;
+                                skos:related <http://eurovoc.europa.eu/2539> ,
+                                             <http://eurovoc.europa.eu/2882> ,
+                                             <http://eurovoc.europa.eu/2884> ,
+                                             <http://eurovoc.europa.eu/5338> ,
+                                             <http://eurovoc.europa.eu/6747> .
+
+
+###  http://eurovoc.europa.eu/5298
+<http://eurovoc.europa.eu/5298> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/2376> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "cząstka elementarna"@pl ,
+                                               "fundamental particle"@en ,
+                                               "particella elementare"@it ,
+                                               "partícula elemental"@es .
+
+
+###  http://eurovoc.europa.eu/5299
+<http://eurovoc.europa.eu/5299> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/2376> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "atom"@en ,
+                                               "atom"@pl ,
+                                               "atomo"@it ,
+                                               "átomo"@es .
+
+
+###  http://eurovoc.europa.eu/5300
+<http://eurovoc.europa.eu/5300> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/5966> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "analytical chemistry"@en ,
+                                               "chemia analityczna"@pl ,
+                                               "chimica analitica"@it ,
+                                               "química analítica"@es ;
+                                skos:related <http://eurovoc.europa.eu/6271> ,
+                                             <http://eurovoc.europa.eu/6272> .
+
+
+###  http://eurovoc.europa.eu/5301
+<http://eurovoc.europa.eu/5301> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3946> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "espectrometría"@es ,
+                                               "spectrometry"@en ,
+                                               "spektrometria"@pl ,
+                                               "spettrometria"@it .
+
+
+###  http://eurovoc.europa.eu/5303
+<http://eurovoc.europa.eu/5303> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4921> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "citologia"@it ,
+                                               "citología"@es ,
+                                               "cytologia"@pl ,
+                                               "cytology"@en .
+
+
+###  http://eurovoc.europa.eu/5338
+<http://eurovoc.europa.eu/5338> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4921> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "radiobiologia"@it ,
+                                               "radiobiologia"@pl ,
+                                               "radiobiology"@en ,
+                                               "radiobiología"@es ;
+                                skos:related <http://eurovoc.europa.eu/2884> ,
+                                             <http://eurovoc.europa.eu/5287> .
+
+
+###  http://eurovoc.europa.eu/5608
+<http://eurovoc.europa.eu/5608> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4921> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "embrion i płód"@pl ,
+                                               "embrione e feto"@it ,
+                                               "embrión y feto"@es ,
+                                               "embryo and foetus"@en ;
+                                skos:related <http://eurovoc.europa.eu/435098> ,
+                                             <http://eurovoc.europa.eu/5169> ,
+                                             <http://eurovoc.europa.eu/5512> .
+
+
+###  http://eurovoc.europa.eu/5651
+<http://eurovoc.europa.eu/5651> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4921> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "genetica"@it ,
+                                               "genetics"@en ,
+                                               "genetyka"@pl ,
+                                               "genética"@es ;
+                                skos:related <http://eurovoc.europa.eu/4111> .
+
+
+###  http://eurovoc.europa.eu/5740
+<http://eurovoc.europa.eu/5740> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4921> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "microorganism"@en ,
+                                               "microorganismo"@es ,
+                                               "microrganismo"@it ,
+                                               "mikroorganizm"@pl .
+
+
+###  http://eurovoc.europa.eu/5966
+<http://eurovoc.europa.eu/5966> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3946> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "chemia"@pl ,
+                                               "chemistry"@en ,
+                                               "chimica"@it ,
+                                               "química"@es ;
+                                skos:related <http://eurovoc.europa.eu/1147> ,
+                                             <http://eurovoc.europa.eu/1362> ,
+                                             <http://eurovoc.europa.eu/2364> ,
+                                             <http://eurovoc.europa.eu/2739> ,
+                                             <http://eurovoc.europa.eu/3789> ,
+                                             <http://eurovoc.europa.eu/51> ,
+                                             <http://eurovoc.europa.eu/5967> ,
+                                             <http://eurovoc.europa.eu/5968> ,
+                                             <http://eurovoc.europa.eu/6386> .
+
+
+###  http://eurovoc.europa.eu/5968
+<http://eurovoc.europa.eu/5968> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3949> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "chemia przemysłowa"@pl ,
+                                               "chimica industriale"@it ,
+                                               "industrial chemistry"@en ,
+                                               "química industrial"@es ;
+                                skos:related <http://eurovoc.europa.eu/1362> ,
+                                             <http://eurovoc.europa.eu/5260> ,
+                                             <http://eurovoc.europa.eu/5966> .
+
+
+###  http://eurovoc.europa.eu/6111
+<http://eurovoc.europa.eu/6111> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4889> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "enzima"@es ,
+                                               "enzima"@it ,
+                                               "enzym"@pl ,
+                                               "enzyme"@en ;
+                                skos:related <http://eurovoc.europa.eu/1224> ,
+                                             <http://eurovoc.europa.eu/3795> ,
+                                             <http://eurovoc.europa.eu/4416> ,
+                                             <http://eurovoc.europa.eu/6052> .
+
+
+###  http://eurovoc.europa.eu/6260
+<http://eurovoc.europa.eu/6260> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/5651> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "ADN"@es ,
+                                               "DNA"@en ,
+                                               "DNA"@it ,
+                                               "DNA"@pl ;
+                                skos:related <http://eurovoc.europa.eu/7410> .
+
+
+###  http://eurovoc.europa.eu/632
+<http://eurovoc.europa.eu/632> rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        cdesc:ResearchArea ;
+                               skos:broader <http://eurovoc.europa.eu/3941> ;
+                               skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                             <http://eurovoc.europa.eu/100224> ;
+                               skos:prefLabel "ecologia"@it ,
+                                              "ecology"@en ,
+                                              "ecología"@es ,
+                                              "ekologia"@pl ;
+                               skos:related <http://eurovoc.europa.eu/c_d8ba2fe4> ,
+                                            <http://eurovoc.europa.eu/2470> ,
+                                            <http://eurovoc.europa.eu/2919> ,
+                                            <http://eurovoc.europa.eu/6011> ,
+                                            <http://eurovoc.europa.eu/664> ,
+                                            <http://eurovoc.europa.eu/844> .
+
+
+###  http://eurovoc.europa.eu/6381
+<http://eurovoc.europa.eu/6381> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3931> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "analisi del terreno"@it ,
+                                               "analiza gleby"@pl ,
+                                               "análisis del suelo"@es ,
+                                               "soil analysis"@en .
+
+
+###  http://eurovoc.europa.eu/6382
+<http://eurovoc.europa.eu/6382> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "ciencia del espacio"@es ,
+                                               "nauka o przestrzeni kosmicznej"@pl ,
+                                               "scienze spaziali"@it ,
+                                               "space science"@en ;
+                                skos:related <http://eurovoc.europa.eu/1358> ,
+                                             <http://eurovoc.europa.eu/3092> ,
+                                             <http://eurovoc.europa.eu/4185> ,
+                                             <http://eurovoc.europa.eu/5238> ;
+                                skos:topConceptOf <http://eurovoc.europa.eu/100224> .
+
+
+###  http://eurovoc.europa.eu/6383
+<http://eurovoc.europa.eu/6383> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/6382> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "astronautica"@it ,
+                                               "astronautics"@en ,
+                                               "astronautyka"@pl ,
+                                               "astronáutica"@es ;
+                                skos:related <http://eurovoc.europa.eu/5216> .
+
+
+###  http://eurovoc.europa.eu/6384
+<http://eurovoc.europa.eu/6384> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1892> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "climatologia"@it ,
+                                               "climatology"@en ,
+                                               "climatología"@es ,
+                                               "klimatologia"@pl ;
+                                skos:related <http://eurovoc.europa.eu/4786> ,
+                                             <http://eurovoc.europa.eu/5482> ,
+                                             <http://eurovoc.europa.eu/6011> .
+
+
+###  http://eurovoc.europa.eu/6385
+<http://eurovoc.europa.eu/6385> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/6384> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "bioclimatologia"@it ,
+                                               "bioclimatology"@en ,
+                                               "bioclimatología"@es ,
+                                               "bioklimatologia"@pl ;
+                                skos:related <http://eurovoc.europa.eu/4786> ,
+                                             <http://eurovoc.europa.eu/4921> ,
+                                             <http://eurovoc.europa.eu/6011> .
+
+
+###  http://eurovoc.europa.eu/6386
+<http://eurovoc.europa.eu/6386> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3931> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "chemia gleby"@pl ,
+                                               "chimica del terreno"@it ,
+                                               "química del suelo"@es ,
+                                               "soil chemistry"@en ;
+                                skos:related <http://eurovoc.europa.eu/5966> .
+
+
+###  http://eurovoc.europa.eu/6387
+<http://eurovoc.europa.eu/6387> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1148> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "cultural geography"@en ,
+                                               "geografia culturale"@it ,
+                                               "geografia kulturowa"@pl ,
+                                               "geografía cultural"@es ;
+                                skos:related <http://eurovoc.europa.eu/317> ,
+                                             <http://eurovoc.europa.eu/3956> .
+
+
+###  http://eurovoc.europa.eu/6388
+<http://eurovoc.europa.eu/6388> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1148> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "antropogeografia"@pl ,
+                                               "geografia umana"@it ,
+                                               "geografía humana"@es ,
+                                               "human geography"@en ;
+                                skos:related <http://eurovoc.europa.eu/1221> ,
+                                             <http://eurovoc.europa.eu/3300> .
+
+
+###  http://eurovoc.europa.eu/6389
+<http://eurovoc.europa.eu/6389> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1148> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "geografia regionale"@it ,
+                                               "geografia regionalna"@pl ,
+                                               "geografía regional"@es ,
+                                               "regional geography"@en ;
+                                skos:related <http://eurovoc.europa.eu/3031> ,
+                                             <http://eurovoc.europa.eu/3058> .
+
+
+###  http://eurovoc.europa.eu/6390
+<http://eurovoc.europa.eu/6390> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3952> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "geomorfologia"@it ,
+                                               "geomorfologia"@pl ,
+                                               "geomorfología"@es ,
+                                               "geomorphology"@en ;
+                                skos:related <http://eurovoc.europa.eu/3146> .
+
+
+###  http://eurovoc.europa.eu/6391
+<http://eurovoc.europa.eu/6391> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1151> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "sedimentologia"@it ,
+                                               "sedimentology"@en ,
+                                               "sedimentología"@es ,
+                                               "sedymentologia"@pl .
+
+
+###  http://eurovoc.europa.eu/6392
+<http://eurovoc.europa.eu/6392> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3931> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "soil type"@en ,
+                                               "tipo de suelo"@es ,
+                                               "tipo di terreno"@it ,
+                                               "typ gleby"@pl .
+
+
+###  http://eurovoc.europa.eu/6715
+<http://eurovoc.europa.eu/6715> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3952> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "cindinica"@it ,
+                                               "cindínica"@es ,
+                                               "cyndynika"@pl ,
+                                               "hazard science"@en ;
+                                skos:related <http://eurovoc.europa.eu/4076> .
+
+
+###  http://eurovoc.europa.eu/6716
+<http://eurovoc.europa.eu/6716> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/3790> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "cosmologia"@it ,
+                                               "cosmology"@en ,
+                                               "cosmología"@es ,
+                                               "kosmologia"@pl .
+
+
+###  http://eurovoc.europa.eu/6744
+<http://eurovoc.europa.eu/6744> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/5651> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "eugenesia"@es ,
+                                               "eugenetica"@it ,
+                                               "eugenics"@en ,
+                                               "eugenika"@pl ;
+                                skos:related <http://eurovoc.europa.eu/5169> ,
+                                             <http://eurovoc.europa.eu/7348> .
+
+
+###  http://eurovoc.europa.eu/685
+<http://eurovoc.europa.eu/685> rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        cdesc:ResearchArea ;
+                               skos:broader <http://eurovoc.europa.eu/3949> ;
+                               skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                             <http://eurovoc.europa.eu/100224> ;
+                               skos:prefLabel "agronomia"@it ,
+                                              "agronomia"@pl ,
+                                              "agronomy"@en ,
+                                              "agronomía"@es ;
+                               skos:related <http://eurovoc.europa.eu/2915> ,
+                                            <http://eurovoc.europa.eu/4363> ,
+                                            <http://eurovoc.europa.eu/4412> ,
+                                            <http://eurovoc.europa.eu/4630> ,
+                                            <http://eurovoc.europa.eu/780> .
+
+
+###  http://eurovoc.europa.eu/707
+<http://eurovoc.europa.eu/707> rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        cdesc:ResearchArea ;
+                               skos:broader <http://eurovoc.europa.eu/5966> ;
+                               skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                             <http://eurovoc.europa.eu/100224> ;
+                               skos:prefLabel "electrochemistry"@en ,
+                                              "electroquímica"@es ,
+                                              "elektrochemia"@pl ,
+                                              "elettrochimica"@it ;
+                               skos:related <http://eurovoc.europa.eu/1362> ,
+                                            <http://eurovoc.europa.eu/2382> ,
+                                            <http://eurovoc.europa.eu/2692> ,
+                                            <http://eurovoc.europa.eu/747> .
+
+
+###  http://eurovoc.europa.eu/709
+<http://eurovoc.europa.eu/709> rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        cdesc:ResearchArea ;
+                               skos:broader <http://eurovoc.europa.eu/3946> ;
+                               skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                             <http://eurovoc.europa.eu/100224> ;
+                               skos:prefLabel "electronics"@en ,
+                                              "electrónica"@es ,
+                                              "elektronika"@pl ,
+                                              "elettronica"@it ;
+                               skos:related <http://eurovoc.europa.eu/1400> ,
+                                            <http://eurovoc.europa.eu/1405> ,
+                                            <http://eurovoc.europa.eu/2192> ,
+                                            <http://eurovoc.europa.eu/3876> ,
+                                            <http://eurovoc.europa.eu/50> ,
+                                            <http://eurovoc.europa.eu/849> .
+
+
+###  http://eurovoc.europa.eu/710
+<http://eurovoc.europa.eu/710> rdf:type owl:NamedIndividual ,
+                                        skos:Concept ,
+                                        cdesc:ResearchArea ;
+                               skos:broader <http://eurovoc.europa.eu/3949> ;
+                               skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                             <http://eurovoc.europa.eu/100224> ;
+                               skos:prefLabel "electrotechnology"@en ,
+                                              "electrotécnica"@es ,
+                                              "elektrotechnika"@pl ,
+                                              "elettrotecnica"@it ;
+                               skos:related <http://eurovoc.europa.eu/1401> ,
+                                            <http://eurovoc.europa.eu/6094> .
+
+
+###  http://eurovoc.europa.eu/7218
+<http://eurovoc.europa.eu/7218> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1148> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "Sistema de Información Geográfica"@es ,
+                                               "geographical information system"@en ,
+                                               "sistema di informazione geografica"@it ,
+                                               "system informacji geograficznej"@pl ;
+                                skos:related <http://eurovoc.europa.eu/4359> .
+
+
+###  http://eurovoc.europa.eu/7360
+<http://eurovoc.europa.eu/7360> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1148> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "geografia historyczna"@pl ,
+                                               "geografia storica"@it ,
+                                               "geografía histórica"@es ,
+                                               "historical geography"@en ;
+                                skos:related <http://eurovoc.europa.eu/1245> .
+
+
+###  http://eurovoc.europa.eu/7410
+<http://eurovoc.europa.eu/7410> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1835> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "biometria"@it ,
+                                               "biometria"@pl ,
+                                               "biometrics"@en ,
+                                               "biometría"@es ;
+                                skos:related <http://eurovoc.europa.eu/2272> ,
+                                             <http://eurovoc.europa.eu/488> ,
+                                             <http://eurovoc.europa.eu/4921> ,
+                                             <http://eurovoc.europa.eu/5595> ,
+                                             <http://eurovoc.europa.eu/6260> .
+
+
+###  http://eurovoc.europa.eu/7955
+<http://eurovoc.europa.eu/7955> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/4921> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "cellula staminale"@it ,
+                                               "célula madre"@es ,
+                                               "komórka macierzysta"@pl ,
+                                               "stem cell"@en ;
+                                skos:related <http://eurovoc.europa.eu/4111> ,
+                                             <http://eurovoc.europa.eu/435098> ,
+                                             <http://eurovoc.europa.eu/5169> .
+
+
+###  http://eurovoc.europa.eu/8438
+<http://eurovoc.europa.eu/8438> rdf:type owl:NamedIndividual ,
+                                         skos:Concept ,
+                                         cdesc:ResearchArea ;
+                                skos:broader <http://eurovoc.europa.eu/1152> ;
+                                skos:inScheme <http://eurovoc.europa.eu/100141> ,
+                                              <http://eurovoc.europa.eu/100224> ;
+                                skos:prefLabel "geodesia"@es ,
+                                               "geodesia"@it ,
+                                               "geodesy"@en ,
+                                               "geodezja"@pl .
+
+
+###  Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi

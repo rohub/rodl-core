@@ -1,0 +1,126 @@
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Research Object Digital Library</display-name>
+
+	<context-param>
+		<param-name>connection.properties.filename</param-name>
+		<param-value>connection.properties</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.rohub.rodl.InitConfigurationListener</listener-class>
+	</listener>
+	
+	<filter>
+		<filter-name>HibernateFilter</filter-name>
+		<filter-class>org.rohub.rodl.db.hibernate.HibernateSessionRequestFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>HibernateFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>ListenerCommitFilter</filter-name>
+		<filter-class>org.rohub.rodl.eventbus.ListenerCommitFilter</filter-class>
+	</filter>
+
+
+	<filter-mapping>
+		<filter-name>ListenerCommitFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>Jersey AccessControl Access Control Filter</filter-name>
+		<filter-class>com.sun.jersey.spi.container.servlet.ServletContainer</filter-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>org.rohub.rodl</param-value>
+		</init-param>
+		<init-param>
+			<param-name>com.sun.jersey.spi.container.ContainerRequestFilters</param-name>
+			<param-value>org.rohub.rodl.auth.SecurityFilter; org.rohub.rodl.accesscontrol.filters.AccessControlResourceFilter</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>Jersey AccessControl Access Control Filter</filter-name>
+		<url-pattern>/accesscontrol/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>Jersey Admin Access Control Filter</filter-name>
+		<filter-class>com.sun.jersey.spi.container.servlet.ServletContainer</filter-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>org.rohub.rodl</param-value>
+		</init-param>
+		<init-param>
+			<param-name>com.sun.jersey.spi.container.ContainerRequestFilters</param-name>
+			<param-value>org.rohub.rodl.auth.SecurityFilter; org.rohub.rodl.accesscontrol.filters.AdminResourceFilter</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>Jersey Admin Access Control Filter</filter-name>
+		<url-pattern>/admin/*</url-pattern>
+	</filter-mapping>
+	
+	<filter>
+		<filter-name>Jersey ROs Access Control Filter</filter-name>
+		<filter-class>com.sun.jersey.spi.container.servlet.ServletContainer</filter-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>org.rohub.rodl</param-value>
+		</init-param>
+		<init-param>
+			<param-name>com.sun.jersey.spi.container.ContainerRequestFilters</param-name>
+			<param-value>
+				org.rohub.rodl.auth.RODLAuthorizationFilter;
+				org.rohub.rodl.auth.UserProfileExistsFilter;
+				org.rohub.rodl.accesscontrol.filters.ROsResourceFilter
+			</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>Jersey ROs Access Control Filter</filter-name>
+		<url-pattern>/ROs/*</url-pattern>
+	</filter-mapping>
+
+
+	<filter>
+		<filter-name>Jersey Web Application</filter-name>
+		<filter-class>com.sun.jersey.spi.container.servlet.ServletContainer</filter-class>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.WebPageContentRegex</param-name>
+			<param-value>/(images|js|styles|(WEB-INF/jsp))/.*</param-value>
+		</init-param>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.JSPTemplatesBasePath</param-name>
+			<param-value>/WEB-INF/jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>com.sun.jersey.config.property.packages</param-name>
+			<param-value>org.rohub.rodl</param-value>
+		</init-param>
+		<init-param>
+			<param-name>com.sun.jersey.spi.container.ContainerRequestFilters</param-name>
+			<param-value>
+				org.rohub.rodl.auth.RODLAuthorizationFilter;
+				org.rohub.rodl.auth.UserProfileExistsFilter
+			</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>Jersey Web Application</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+</web-app>

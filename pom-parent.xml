@@ -1,0 +1,155 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.rohub.rodl</groupId>
+	<artifactId>rodl-parent</artifactId>
+	<version>1.0.0</version>
+
+	<packaging>pom</packaging>
+
+	<url>http://www.rohub.org</url>
+	<inceptionYear>2010</inceptionYear>
+
+	<organization>
+		<name>PSNC</name>
+		<url>http://www.psnc.pl</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>mkrystek</id>
+			<email>mkrystek@man.poznan.pl</email>
+			<roles>
+				<role>Developer</role>
+				<role>System Architect</role>
+			</roles>
+			<organization>PSNC</organization>
+			<organizationUrl>http://www.psnc.pl/</organizationUrl>
+		</developer>
+	</developers>
+
+	<contributors>
+		<!-- The following people were involved in the initial design and implementation 
+			of the Research Object Digital Library - RODL. Their work was done as part 
+			of the WF4Ever project http://www.wf4ever-project.org and original source 
+			is still available in Github https://github.com/wf4ever -->
+		<contributor>
+			<name>Piotr Hołubowicz</name>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<organization>PSNC</organization>
+		</contributor>
+		<contributor>
+			<name>Filip</name>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<organization>PSNC</organization>
+		</contributor>
+	</contributors>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<java.target>1.8</java.target>
+		<jersey.version>1.19.2</jersey.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.target}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+			</plugin>
+		</plugins>
+	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>2.9</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>project-team</report>
+							<report>license</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<repositories>
+		<repository>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>rohub-libs-releases-public</id>
+			<url>https://maven.man.poznan.pl/repository/rohub-libs-releases-public</url>
+		</repository>
+		<repository>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>rohub-libs-snapshots-public</id>
+			<url>https://maven.man.poznan.pl/repository/rohub-libs-snapshots-public</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>rohub-libs-releases-public</id>
+			<name>rohub-libs-releases-public</name>
+			<url>https://maven.man.poznan.pl/repository/rohub-libs-releases-public</url>
+		</repository>
+		<snapshotRepository>
+			<id>rohub-libs-snapshots-public</id>
+			<name>rohub-libs-snapshots-public</name>
+			<url>https://maven.man.poznan.pl/repository/rohub-libs-snapshots-public</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>central</id>
+			<name>Maven Plugin Repository</name>
+			<url>http://repo1.maven.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+
+
+</project>

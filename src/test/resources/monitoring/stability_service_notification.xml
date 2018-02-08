@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Notifications for http://sandbox.rohub.org/rodl/ROs/myexperiment_pack_3107/</title>
+  <author>
+    <name>Stability service</name>
+    <email>rodl@wf4ever.org</email>
+  </author>
+  <id>http://sandbox.rohub.org/rodl/notifications/?ro=http%3A%2F%2Fsandbox.rohub.org%2Frodl%2FROs%2Fmyexperiment_pack_3107%2F</id>
+  <updated>2013-07-01T13:29:24Z</updated>
+  <entry>
+    <title>Research Object myexperiment_pack_3107 has been deleted</title>
+    <link rel="http://purl.org/dc/terms/source" href="http://sandbox.rohub.org/rodl" title="RODL" />
+    <link rel="http://www.openarchives.org/ore/terms/describes" href="http://127.0.0.1:8089/rodl/ROs/SimpleRO/" title="Description for" />
+    <id>urn:X-rodl:4897</id>
+    <published>2013-06-13T09:12:36Z</published>
+    <summary type="html">&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;A Research Object has been deleted.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;The Research Object URI was &amp;lt;em&amp;gt;http://sandbox.rohub.org/rodl/ROs/myexperiment_pack_3107/&amp;lt;/em&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;</summary>
+  </entry>
+  <entry>
+    <title>Research Object myexperiment_pack_3107 has been created</title>
+    <link rel="http://purl.org/dc/terms/source" href="http://sandbox.rohub.org/rodl" title="RODL" />
+    <link rel="http://www.openarchives.org/ore/terms/describes" href="http://127.0.0.1:8089/rodl/ROs/SimpleRO/" title="Description for" />
+    <id>urn:X-rodl:4898</id>
+    <published>2013-06-13T09:20:50Z</published>
+    <summary type="html">&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;A new Research Object has been created.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;The Research Object URI is &amp;lt;a href=&amp;quot;http://sandbox.rohub.org/rodl/ROs/myexperiment_pack_3107/&amp;quot;&amp;gt;http://sandbox.rohub.org/rodl/ROs/myexperiment_pack_3107/&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;</summary>
+  </entry>
+  <entry>
+    <title>A resource has been added to the Research Object myexperiment_pack_3107</title>
+    <link rel="http://purl.org/dc/terms/source" href="http://sandbox.rohub.org/rodl" title="RODL" />
+    <link rel="http://www.openarchives.org/ore/terms/describes" href="http://127.0.0.1:8089/rodl/ROs/SimpleRO/" title="Description for" />
+    <id>urn:X-rodl:4899</id>
+    <published>2013-06-13T09:21:43Z</published>
+    <summary type="html">&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;A resource has been added to the Research Object.&amp;lt;/p&amp;gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;The Research Object: &amp;lt;a href=&amp;quot;http://sandbox.rohub.org/rodl/ROs/myexperiment_pack_3107/&amp;quot;&amp;gt;http://sandbox.rohub.org/rodl/ROs/myexperiment_pack_3107/&amp;lt;/a&amp;gt;.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;The resource: &amp;lt;a href=&amp;quot;http://www.myexperiment.org/workflows/3107/download/kegg_reactions_scheme_446032.t2flow?version=1&amp;quot;&amp;gt;http://www.myexperiment.org/workflows/3107/download/kegg_reactions_scheme_446032.t2flow?version=1&amp;lt;/a&amp;gt;.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;</summary>
+  </entry>
+</feed>

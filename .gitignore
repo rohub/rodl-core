@@ -1,0 +1,7 @@
+.classpath
+.project
+.settings/
+NOTES
+target/
+profiles/dev/config.properties
+profiles/prod/config.properties
